@@ -1,8 +1,10 @@
-export default function Home() {
-    return (
-      <div>
-        Route Page (Protected)
-        </div>
-    )
-  }
-    
+const RootPage = () => {
+  return(
+    <div>
+      Root Page (Protected)
+    </div>
+
+  )
+}
+
+export default RootPage
