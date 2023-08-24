@@ -8,13 +8,8 @@ import { BeatLoader } from "react-spinners";
 import UserAvatar from "./UserAvatar";
 import { Button } from "./ui/button";
 import { Copy } from "lucide-react";
+import { ChatMessageProps } from "@/lib/interfaces";
 
-export interface ChatMessageProps {
-  role?: "system" | "user";
-  content?: string;
-  isLoading?: boolean;
-  src?: string;
-}
 
 const ChatMessage = ({ role, content, isLoading, src }: ChatMessageProps) => {
   const { toast } = useToast();
@@ -44,7 +39,7 @@ const ChatMessage = ({ role, content, isLoading, src }: ChatMessageProps) => {
         {isLoading ? (
           <BeatLoader 
           size={5}
-          color={theme === "dark" ? "#fff" : "#000"} />
+          color={theme !== "light" ? "#fff" : "#000"} />
         ) : (
           content
         )}
