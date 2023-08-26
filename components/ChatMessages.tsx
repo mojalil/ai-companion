@@ -50,7 +50,7 @@ const ChatMessages = ({
           key={message.content + Math.random().toString(36).substring(7)}
           role={message.role}
           content={message.content}
-          src={message.src}
+          src={companion.src}
         />
       ))}
       {isLoading && (
