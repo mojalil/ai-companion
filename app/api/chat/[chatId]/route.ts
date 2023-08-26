@@ -82,7 +82,7 @@ export async function POST(
       relevantHistory = similarDocs.map((doc) => doc.pageContent).join("\n");
     }
     const { handlers } = LangChainStream();
-    
+
     // Call Replicate for inference
     const model = new Replicate({
       model:
@@ -145,6 +145,7 @@ export async function POST(
 
     return new StreamingTextResponse(s);
   } catch (error) {
+    console.error('Error in chat/[chatId]/route.ts: ', error);
     return new NextResponse("Internal Error", { status: 500 });
   }
 };

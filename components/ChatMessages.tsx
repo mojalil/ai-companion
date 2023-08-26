@@ -36,6 +36,7 @@ const ChatMessages = ({
   }
   , [messages.length]);
 
+
   return (
     <div className="flex-1 overflow-y-auto pr-4">
       <ChatMessage
@@ -46,7 +47,7 @@ const ChatMessages = ({
       />
       {messages.map((message) => (
         <ChatMessage
-          key={message.content}
+          key={message.content + Math.random().toString(36).substring(7)}
           role={message.role}
           content={message.content}
           src={message.src}
