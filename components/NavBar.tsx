@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 import MobileSidebar from "@/components/MobileSidebar";
 import { useProModal } from "@/hooks/use-pro-modal";
+import { APP_NAME } from "@/constants";
 
 const font = Poppins({
   weight: "600",
@@ -32,7 +33,7 @@ const NavBar = ({ isPro }: NavBarProps) => {
               font.className
             )}
           >
-            companion.ai
+            {APP_NAME}
           </h1>
         </Link>
       </div>

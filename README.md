@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Companion AI
+
+Header: ![companion-ai-opengraph](https://github.com/mojalil/ai-companion/assets/10572843/f7946c9c-ed0e-4ad8-ab8f-ae7fce7db2cf)
 
 ## Getting Started
 
