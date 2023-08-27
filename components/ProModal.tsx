@@ -11,38 +11,41 @@ import { useProModal } from "@/hooks/use-pro-modal";
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
 import { useToast } from "./ui/use-toast";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { set } from "react-hook-form";
 import axios from "axios";
 
 const ProModal = () => {
   const proModal = useProModal();
-  const {toast} = useToast();
+  const { toast } = useToast();
 
   const [loading, setLoading] = useState(false);
 
-  const onSubscribe = async() => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const onSubscribe = async () => {
     try {
-        setLoading(true);
-        const response = await axios.get("/api/stripe");
+      setLoading(true);
+      const response = await axios.get("/api/stripe");
 
-        window.location.href = response.data.url;
-
+      window.location.href = response.data.url;
     } catch (error) {
-        
-        toast({
-            variant: "destructive",
-            description: "Something went wrong. Please try again later.",
-        });
-
+      toast({
+        variant: "destructive",
+        description: "Something went wrong. Please try again later.",
+      });
     } finally {
-        setLoading(false);
-
+      setLoading(false);
     }
-    };
+  };
 
-
-
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <Dialog open={proModal.isOpen} onOpenChange={proModal.onClose}>
@@ -61,11 +64,9 @@ const ProModal = () => {
             $9
             <span className="text-sm font-normal">.99/mo</span>
           </p>
-          <Button
-          disabled={loading}
-          variant={"premium"}
-          onClick={onSubscribe}
-          >Subscribe</Button>
+          <Button disabled={loading} variant={"premium"} onClick={onSubscribe}>
+            Subscribe
+          </Button>
         </div>
       </DialogContent>
     </Dialog>
