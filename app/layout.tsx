@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: APP_DESCRIPTION,
     images: [
       {
-        url: 'https://github-production-user-asset-6210df.s3.amazonaws.com/10572843/263529024-f7946c9c-ed0e-4ad8-ab8f-ae7fce7db2cf.png',
+        url: 'https://user-images.githubusercontent.com/10572843/263591125-91343d92-6b5d-4d13-bc1a-558ca970bdba.png',
         width: 1200,
         height: 630,
         alt: APP_NAME,

@@ -1,6 +1,6 @@
 # Companion AI
 
-Header: ![companion-ai-opengraph](https://github.com/mojalil/ai-companion/assets/10572843/f7946c9c-ed0e-4ad8-ab8f-ae7fce7db2cf)
+![Screenshot 2023-08-28 at 12 12 51](https://github.com/mojalil/ai-companion/assets/10572843/91343d92-6b5d-4d13-bc1a-558ca970bdba)
 
 ## Getting Started
 
