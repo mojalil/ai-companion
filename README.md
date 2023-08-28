@@ -1,40 +1,87 @@
-# Companion AI
+Absolutely, here's the enhanced `README.md` with the provided details:
 
-![Screenshot 2023-08-28 at 12 12 51](https://github.com/mojalil/ai-companion/assets/10572843/91343d92-6b5d-4d13-bc1a-558ca970bdba)
+---
 
-## Getting Started
+# companion.ai
 
-First, run the development server:
+![version badge](https://img.shields.io/badge/version-0.1.0-blue)
 
-```bash
+A brief description about what 'companion.ai' does.
+
+![App Image](https://user-images.githubusercontent.com/10572843/263591125-91343d92-6b5d-4d13-bc1a-558ca970bdba.png)
+
+## Features
+
+- AI comanions have memory, they will recall the conversation
+- Create companions
+- ...
+
+## Prerequisites
+
+- Node.js (>= 14.x)
+- NPM (>= 7.x)
+
+## Setup & Installation
+
+1. Clone this repository:
+   ```
+   git clone <REPO_URL>
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd ai-companion
+   ```
+
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+
+## Development
+
+To run the project in development mode, use:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Building the App
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To create an optimized production build, use:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+npm run build
+```
 
-## Modifying Database
+Once the build is finished, you can run the production server:
 
-`npx prisma generate`
-`npx prisma db push`
-## Learn More
+```
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Linting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To check your code for linting errors, use:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run lint
+```
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are what make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add some YourFeature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
+
+---
+
+Built with :heart: by [@motypes](https://twitter.com/motypes)
+
+---
+
+You can expand the description for 'companion.ai' as required. If there are additional details or changes you'd like, let me know!
