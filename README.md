@@ -1,12 +1,8 @@
-Absolutely, here's the enhanced `README.md` with the provided details:
-
----
-
 # companion.ai
 
 ![version badge](https://img.shields.io/badge/version-0.1.0-blue)
 
-A brief description about what 'companion.ai' does.
+**Create & talk to your AI companion.**
 
 ![App Image](https://user-images.githubusercontent.com/10572843/263591125-91343d92-6b5d-4d13-bc1a-558ca970bdba.png)
 
@@ -15,6 +11,20 @@ A brief description about what 'companion.ai' does.
 - AI comanions have memory, they will recall the conversation
 - Create companions
 - ...
+
+## Technologies Used
+
+- Next.js
+- Prisma
+- Clerk (For authentication with Next.js)
+- Pinecone Database
+- Radix UI (For react components)
+- Upstash (Redis & Rate limiting)
+- OpenAI SDKs
+- React Hook Form
+- Tailwind CSS
+- TypeScript
+- ... (Feel free to expand upon this)
 
 ## Prerequisites
 
@@ -81,7 +91,3 @@ Contributions are what make the open-source community an amazing place to learn,
 ---
 
 Built with :heart: by [@motypes](https://twitter.com/motypes)
-
----
-
-You can expand the description for 'companion.ai' as required. If there are additional details or changes you'd like, let me know!
